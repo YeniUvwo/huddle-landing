@@ -1,0 +1,188 @@
+body{
+    background-image: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-position-x: -10px;
+    background-size: 1100px ;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.header img{
+    width: 150px;
+}
+
+.mockup img{
+    width: 600px;
+    height: 450px;
+    padding-top: 30px;
+}
+
+.about{
+    width: 650px;
+    height: 500px;
+    padding: 40px;
+    color: #E6E6E6;
+}
+
+h1{
+    padding: 50px 50px 5px 0px;
+    line-height: 1.7em;
+    font-size: 1.8em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text{
+    line-height: 1.4em;
+    font-weight: lighter;
+    font-size: 1.090em;
+    font-family: 'Open Sans';
+}
+
+.btn{
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+.btn:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.icons{
+    text-align: right;
+    margin-right: 70px;
+}
+i:hover{
+    color: hsl(300, 69%, 71%);
+    color: white; 
+}
+.icons a{
+    text-decoration: none;
+}
+.icons i{
+    border: 1.3px solid;
+    padding: 8px;
+    border-radius: 50%;
+    margin: 0px 3px;
+    font-size: 12px;
+    color: #ffff;
+}
+.icons i:hover{
+    border: 1.3px solid hsl(300, 69%, 71%);
+    padding: 8px;
+    border-radius: 50%;
+    color: hsl(300, 69%, 71%);
+    filter: brightness(0.7);
+}
+.icons .fa-facebook-f{
+    padding: 8px 10px;
+}
+.icons .fa-facebook-f:hover {
+    padding: 8px 10px;
+}
+footer{
+    margin-bottom: none;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 0px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+ 
+@media (max-width:1250px){
+    body{
+        background-color: black;
+        background-image: none;
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+        padding-top: 30px;
+        background-color: hsl(257, 40%, 49%);
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 100%;
+        max-width: 350px;
+    }
+    .header{
+        margin-left: 5px;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: ;
+        height: 100%;
+    }
+
+    .mockup img{
+        width: 300px;
+        height: 250px;
+        padding-top: 30px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 250px;
+        padding: 50px 10px 10px;
+        height: 100%;
+    }
+    h1{
+        padding: 10px;
+        font-size: 1.4em;
+    }
+
+    .text{
+        text-align: center;
+    }
+    .btn{
+        width: 200px;
+        font-size: 0.8em;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 50px;
+    }
+    .icons{
+        margin-left: 100px;
+    }
+    .icons i{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
